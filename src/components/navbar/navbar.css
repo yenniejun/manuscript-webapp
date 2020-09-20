@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+.outerContainer {
+    margin-top: 1rem;
+    display: inline-flex;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.outerContainer div {
+    margin: 1rem;
+}
+
+.navbar-icon {
+    height: 2rem;
+    opacity: 0.5;
+}
+
+.navbar-icon:hover {
+    opacity: 1;
+}
+
+a:visited, a:hover, a:link {
+    color: black;
+    text-decoration: none !important;
+}
+
+.active{
+    font-weight:700;
+}
+
+.active .navbar-icon {
+    opacity: 1 !important;
+}

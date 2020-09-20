@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Scada:wght@400;700&display=swap');
+
+.manuscript-data-box {
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid rgba(var(--b6a,219,219,219),1);
+    border-bottom: 0.5px solid rgba(22, 24, 35, 0.12);
+    /* box-shadow: 0 1px 2px rgba(0,0,0,.07), 0 2px 4px rgba(0,0,0,.07), 0 4px 8px rgba(0,0,0,.07), 0 8px 16px rgba(0,0,0,.07), 0 16px 32px rgba(0,0,0,.07), 0 32px 64px rgba(0,0,0,.07); */
+    color: #262626;
+    font-family: 'Scada', sans-serif;
+    font-size: 1.5rem;
+    margin: 3rem auto 3rem auto;
+    padding: 2rem;
+    width: calc(100vw - 290px);
+    -webkit-tap-highlight-color: transparent;
+    -webkit-font-smoothing: antialiased;
+
+}
+
+tr td {
+    padding-top: 1rem;
+}
+
+tr td:first-child {
+    text-align: right;
+    font-weight: 700;
+}
+
+tr td:nth-child(2) {
+    text-align: left;
+    padding-left: 1rem;
+}
+
+.add-margin {
+    margin-top: 5rem;
+    margin-bottom: 10rem;
+}
+
+
+
+
+
+
+
+
+
+/* CSS FOR MODAL */
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1040;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+    opacity: .5;
+  }
+  
+  .modal-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1050;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    outline: 0;
+  }
+  
+  .modal {
+    z-index: 100;
+    background: white;
+    position: relative;
+    margin: 1.75rem auto;
+    border-radius: 3px;
+    max-width: 500px;
+    padding: 2rem;
+  }
+  
+  .modal-header {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .modal-close-button {
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    opacity: .3;
+    cursor: pointer;
+    border: none;
+  }

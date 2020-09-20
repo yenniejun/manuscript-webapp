@@ -1,26 +1,35 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
 import './App.css';
+import { Route, Switch, BrowserRouter } from 'react-router-dom';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import Admin from './components/pages/Admin';
+
+
+import Navbar from './components/navbar/navbar';
+import Home from './components/pages/Home';
+import ManuscriptPage from './components/pages/ManuscriptPage';
+import MessagePage from './components/pages/MessagePage';
+import AuthorPage from './components/pages/AuthorPage';
+import SettingsPage from './components/pages/SettingsPage';
+
+class App extends Component {
+  render() {
+    return (
+      <BrowserRouter>
+      <div className="App">
+        <Navbar/>
+        <Switch>
+          <Route path="/admin" component={Admin} />
+          <Route exact path="/" component={Home}/>
+          <Route path="/manuscripts" component={ManuscriptPage}/>
+          <Route path="/messages" component={MessagePage}/>
+          <Route path="/profile" component={AuthorPage}/>
+          <Route path="/settings" component={SettingsPage}/>
+        </Switch>
+      </div>
+      </BrowserRouter>
+    );
+  }
 }
-
 export default App;
+
